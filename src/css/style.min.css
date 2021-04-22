@@ -1,1 +1,1 @@
-.container{max-width:950px;margin:0 auto}
+.header{background:#1d2478;color:#fff;min-height:570px}.header__wrapper{position:relative;margin:0}.header__wrapper img{position:absolute;right:50px;top:0}.header__title{font-size:45px;font-weight:700;padding-top:70px}.header__subtitle{color:#d1d3e4;margin:20px 0}.container{max-width:1140px;margin:0 auto}.button{width:300px;display:block;font-size:18px;font-weight:600;background-color:#fff;border-radius:25px;text-align:center;color:#1d2478;padding:10px 40px;text-decoration:none!important}
