@@ -1,0 +1,41 @@
+.nav
+    position: fixed
+    background: $main-color
+    top: 0
+    left: 0
+    right: 0
+    transition: all .3 ease-in-out
+    z-index: 2
+    .logo        
+        width: 138px
+        height: 43px
+        padding: 0 20px
+        background: url('../img/Logo_white.png') center (center/cover) no-repeat
+    .wrapper 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0
+        transition: all .3 ease-in-out        
+    ul
+        display: flex
+        list-style-type: none
+        align-items: center
+        justify-content: center
+    a
+        color: #bbbdd7
+        text-decoration: none
+        padding: 7px 15px
+        transition: all .3 ease-in-out
+        .current, &:hover
+            color: #fff
+    &-active
+        background: #ffffff
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2)
+
+.nav.nav-active a
+    color: #000000
+    .current, &:hover
+            color: $main-color
+.nav.nav-active .container 
+    padding: 10px 0
