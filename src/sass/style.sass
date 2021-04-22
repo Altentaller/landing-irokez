@@ -1,7 +1,10 @@
 @import 'variables' 
 @import 'blocks/header' 
 @import 'blocks/service' 
+@import 'blocks/about' 
 
+*
+    font-size: 16px
 .container    
 	max-width: 1140px
 	margin: 0 auto
@@ -15,14 +18,15 @@
     border-radius: 25px    
     text-align: center
     color: $main-color
-    padding: 10px 40px
+    padding: 10px 40px    
     margin-top: 25px
     text-decoration: none!important
     &:hover
         font-weight: 700
-    &_service
+    &_dark
         background: $main-color
-        color: #ffffff
+        color: #ffffff        
+        margin-top: 45px
         &:hover
             color: #ffffff
 
@@ -32,3 +36,7 @@
     font-weight: 600
     font-size: 40px
     margin-bottom: 20px
+    span
+        font-size: 40px
+        color: $main-color
+        font-weight: 600
