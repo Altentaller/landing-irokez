@@ -15,26 +15,63 @@
 
 .button
     width: 300px
-    display: block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 10px 10px 30px  
     font-size: 16px
     font-weight: 600
     background-color: white
-    border-radius: 25px    
+    border-radius: 25px   
     text-align: center
-    color: $main-color
-    padding: 10px 30px    
+    color: $main-color     
     margin-top: 25px
     text-decoration: none!important
     transition: all 0.1s linear
+    span
+        display: inline-block
+        width: 30px
+        height: 30px
+        border-radius: 50%       
+        background: $accent-color 
+        i
+            color: #ffffff      
+            font-size: 18px
+            font-weight: 700                       
+            line-height: 20px 
+            padding: 4px 4px 4px 8px
+            text-align: center
     &:hover
         opacity: .6
     &_dark
+        display: block
+        padding: 10px
         background: $main-color
         color: #ffffff        
         margin-top: 45px
         &:hover
             color: #ffffff
+        &-icon
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 10px 10px 10px 30px 
+            span
+                display: inline-block
+                width: 30px
+                height: 30px
+                border-radius: 50%       
+                background: $accent-color 
+                i
+                    color: #ffffff      
+                    font-size: 18px
+                    font-weight: 700                       
+                    line-height: 20px 
+                    padding: 4px 4px 4px 8px
+                    text-align: center
     &_white
+        display: block
+        padding: 10px
         background: #ffffff  
         margin: 0 auto
         margin-top: 40px

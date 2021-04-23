@@ -12,8 +12,58 @@ function fixNav(){
     }
 }  
 
+/* form validate */
 
-/* to top  */
+
+function validateForm(form){
+    $(form).validate({
+      rules: {
+        name: "required",
+        tel: "required",
+        email: {
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, укажите Ваше имя",
+        tel: "Пожалуйста, укажите Ваш телефон",
+        email: {
+          email: "Неправильно введен адрес почты"
+        }
+      }
+    });      
+  };
+
+  validateForm('#main-form form');
+
+  $('input[name=tel]').mask("+7 (999) 999-99-99");//маска поля тел
+  
+  $('form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function(){
+          $(this).find("input").val("");
+          $(this).find("textarea").val("");
+          $('.thanks').fadeIn('slow');
+          $('form').trigger('reset');
+    });
+    return false
+  });
+
+/* scroll to links */
+
+$(function(){
+    $("a[href^='#']").click(function(){
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+    });
+});
+
+/* scroll to top  */
 
 $(document).ready(function(){   
     $(window).scroll(function () {
