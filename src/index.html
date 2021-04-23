@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ирокез</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">	
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <nav class="nav">
+    <nav class="nav" id="up">
         <div class="wrapper">
-            <div class="logo"></div>
+            <div class="logo "></div>
 
             <ul>
                 <li><a href="" class="current">Главная</a></li>
                 <li><a href="">Наши услуги</a></li>
                 <li><a href="">О компании</a></li>
                 <li><a href="">Преимущества</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="">Контакты</a>
+                <li><a href="" class="phone">8 (909) 507-34-44</a></li>
             </ul>
+
+            
         </div>
     </nav>
 
@@ -60,7 +64,11 @@
                 </div>
 
                 <div class="service__item">
-                    <img src="img/service-pult.jpg">                    
+                        
+                    <div class="service__item-img">
+                        <img src="img/service-pult.jpg"> 
+                    </div>
+                    
                     <div class="service__item-title">
                         Пультовая охрана
                     </div>
@@ -69,7 +77,9 @@
                     </div>
                 </div>
                 <div class="service__item">
-                    <img src="img/service-fiz.jpg">
+                    <div class="service__item-img">
+                        <img src="img/service-fiz.jpg">
+                    </div>
                     <div class="service__item-title">
                         Физическая охрана
                     </div>
@@ -85,7 +95,7 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__desc">
+                <div class="about__desc wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
                     <div class="title">Об охранном холдинге <span>«Ирокез»</span> </div>
                     <p>
                         В настоящее время охранная деятельность осуществляется в городах Барнауле и Бийске.
@@ -108,7 +118,7 @@
                     <a href="" class="button button_dark">Заказать консультацию</a>
                 </div>
 
-                <div class="about__img">
+                <div class="about__img wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1.3s" >
                     <img src="img/about-irokez.png">
                 </div>
             </div>
@@ -118,7 +128,7 @@
     <section class="facts">
         <div class="container">
             <div class="facts__wrapper">
-                <div class="facts__item">
+                <div class="facts__item fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.5s">
                     <div class="facts__item-title">
                         <span class="facts__item-circle">1</span> Безупречность 
                     </div>
@@ -126,7 +136,7 @@
                         Безупречность нашей работы подтвердят все наши партнёры.
                     </div>
                 </div>
-                <div class="facts__item">
+                <div class="facts__item fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="1s">
                     <div class="facts__item-title">
                         <span class="facts__item-circle">2</span> Уверенность 
                     </div>
@@ -134,9 +144,9 @@
                         Уверенность и спокойствие — состояние всех наших клиентов.
                     </div>
                 </div>
-                <div class="facts__item">
+                <div class="facts__item fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="1.5s">
                     <div class="facts__item-title">
-                        <span class="facts__item-circle">2</span> Действие 
+                        <span class="facts__item-circle">3</span> Действие 
                     </div>
                     <div class="facts__item-text">
                         Действие там, где останавливаются наши коллеги: мы ускоряемся.
@@ -148,7 +158,7 @@
 
     <section class="cta">
         <div class="container">
-                <div class="cta__title">
+                <div class="cta__title fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.5s">
                     В 99% случаев — монтируем оборудование и берём под охрану объекты СРАЗУ В ДЕНЬ ОБРАЩЕНИЯ!
                 </div>
 
@@ -157,7 +167,7 @@
     </section>        
     
     <div class="footer">
-        <div class="container">
+        <div class="container fadeInUp wow" data-wow-duration="0.4s" data-wow-delay="0.5s">
             <div class="footer__wrapper">
                 <div class="footer__item">
                     <img src="img/logo-bottom.png">
@@ -202,6 +212,10 @@
         <p class="copy"> © 1997-2021 Охранный холдинг «Ирокез»</p>
     </div>
     
+    <div id="scroller">&uarr;</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

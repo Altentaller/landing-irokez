@@ -9,8 +9,14 @@
         border-radius: 20px
         box-shadow: 0 2px 17px rgba(34, 34, 32, 0.1)
         margin: 0 20px   
-        img 
-            border-radius: 20px 20px 0 0     
+        overflow: hidden  
+        &-img            
+            overflow: hidden  
+            border-radius: 20px 20px 0 0  
+            img                  
+                transition: all .4s ease-out
+                &:hover
+                    transform: scale(1.1)
         &-title
             padding: 30px 30px 15px 30px        
             color: #222222

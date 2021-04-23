@@ -22,11 +22,12 @@
     border-radius: 25px    
     text-align: center
     color: $main-color
-    padding: 10px 40px    
+    padding: 10px 30px    
     margin-top: 25px
     text-decoration: none!important
+    transition: all 0.1s linear
     &:hover
-        font-weight: 700
+        opacity: .6
     &_dark
         background: $main-color
         color: #ffffff        
@@ -67,3 +68,17 @@
 
 .copy
     font-size: 14px 
+
+#scroller
+    position: fixed
+    bottom: 30px
+    right: 30px
+    background: $accent-color
+    color: #ffffff
+    text-align: center
+    font-size: 30px
+    line-height: 35px
+    width: 40px
+    height: 40px
+    cursor: pointer
+    display: none
