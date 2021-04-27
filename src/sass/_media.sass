@@ -104,6 +104,10 @@
     .facts  
         &__wrapper         
             margin: 0 25px
+            align-items: flex-start
+        &__item
+            &-text
+                font-size: 14px
     .cta 
         &__wrapper         
             margin: 0 25px
@@ -118,3 +122,159 @@
                 padding: 5px
     .copy
         margin-left: 15px
+@media (min-width: 600px) and (max-width: 767px) 
+    .nav
+        ul
+            display: none
+    .header
+        &__wrapper
+            margin: 0 100px          
+            display: flex      
+            flex-direction: column 
+            justify-content: center 
+            padding-top: 100px 
+            img
+                width: 100%
+                position: static
+                display: block
+                margin: 0 auto                
+        &__title
+            font-size: 55px   
+    .service
+        &__wrapper         
+            margin: 0 25px            
+            flex-wrap: wrap
+            justify-content: space-between
+        &__item 
+            width: 95%
+            margin: 0             
+            margin-top: 55px
+            overflow: hidden
+            &-img            
+                overflow: hidden
+                border-radius: 20px 20px 0 0  
+                img
+                    width: 100%
+    .about
+        &__wrapper         
+            margin: 0 25px
+            flex-wrap: wrap
+            justify-content: center
+        &__desc
+              width: 100%        
+        &__img
+            img
+                width: 90% 
+                margin-top: 35px    
+    .facts  
+        &__wrapper         
+            margin: 0 25 0 0
+            flex-direction: column
+        &__item
+            padding-bottom: 30px
+            &-text
+                font-size: 14px
+    .cta 
+        &__wrapper         
+            margin: 0 25px
+    .footer
+        &__wrapper         
+            margin: 0 25px
+            align-items: flex-start
+            flex-direction: column            
+        &__item            
+            display: flex            
+            align-items: flex-start  
+            p
+                margin: 0 10px       
+            img
+                height: 100px
+            &-map
+                display: none    
+        &__item:nth-child(3)       
+            margin-top: 20px
+            flex-direction: column 
+            align-items: center
+            width: 100% 
+    .copy
+        margin-left: 15px
+@media (max-width: 599px) 
+    .nav
+        ul
+            display: none
+    .header
+        &__wrapper
+            margin: 0 25px          
+            display: flex      
+            flex-direction: column 
+            justify-content: center 
+            padding-top: 100px 
+            img
+                width: 100%
+                position: static
+                display: block
+                margin: 0 auto
+                margin-top: 15px                
+        &__title
+            font-size: 35px   
+    .service
+        &__wrapper         
+            margin: 0 25px            
+            flex-wrap: wrap
+            justify-content: space-between
+        &__item 
+            width: 95%
+            margin: 0             
+            margin-top: 55px
+            overflow: hidden
+            &-img            
+                overflow: hidden
+                border-radius: 20px 20px 0 0  
+                img
+                    width: 100%
+    .about
+        padding-bottom: 50px 
+        &__wrapper         
+            margin: 0 25px
+            flex-wrap: wrap
+            justify-content: center
+        &__desc
+              width: 100%        
+        &__img
+            img
+                width: 90% 
+                margin-top: 35px    
+    .facts  
+        &__wrapper         
+            margin: 0 25 0 0
+            flex-direction: column
+        &__item
+            padding-bottom: 30px
+            &-text
+                font-size: 14px
+    .cta 
+        &__wrapper         
+            margin: 0 25px
+        &__title
+            font-size: 25px
+    .footer
+        &__wrapper         
+            margin: 0 25px
+            align-items: flex-start
+            flex-direction: column            
+        &__item            
+            display: flex            
+            align-items: flex-start  
+            p
+                margin: 0 10px   
+            img
+                display: none
+            &-map
+                display: none    
+        &__item:nth-child(3)       
+            margin-top: 30px
+            flex-direction: column 
+            align-items: center
+            width: 100% 
+    .copy
+        margin-left: 15px        
