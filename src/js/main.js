@@ -39,18 +39,20 @@ function validateForm(form){
   $('input[name=tel]').mask("+7 (999) 999-99-99");//маска поля тел
   
   $('form').submit(function(e){
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "mailer/smart.php",
-      data: $(this).serialize()
-    }).done(function(){
-          $(this).find("input").val("");
-          $(this).find("textarea").val("");
-          $('.thanks').fadeIn('slow');
-          $('form').trigger('reset');
-    });
-    return false
+    if ($("#name").val().length !== 0 && $("#email").val().length !== 0 && $("#tel").val().length !== 0) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function(){
+            $(this).find("input").val("");
+            $(this).find("textarea").val("");
+            $('.thanks').fadeIn('slow');
+            $('form').trigger('reset');
+      });
+      return false
+    }
   });
 
 /* scroll to links */
