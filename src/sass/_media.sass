@@ -68,11 +68,8 @@
                 width: 370px 
                 padding: 5px
     .copy
-        margin-left: 15px
-@media (min-width: 768px) and (max-width: 956px) 
-    .nav
-        ul
-            display: none
+        margin-left: 15px       
+@media (min-width: 768px) and (max-width: 956px)
     .header
         &__wrapper
             margin: 0 25px
@@ -123,9 +120,6 @@
     .copy
         margin-left: 15px
 @media (min-width: 600px) and (max-width: 767px) 
-    .nav
-        ul
-            display: none
     .header
         &__wrapper
             margin: 0 100px          
@@ -199,9 +193,6 @@
     .copy
         margin-left: 15px
 @media (max-width: 599px) 
-    .nav
-        ul
-            display: none
     .header
         &__wrapper
             margin: 0 25px          
@@ -278,3 +269,15 @@
             width: 100% 
     .copy
         margin-left: 15px        
+/* mob nav */
+@media (max-width: 956px) 
+    .nav
+        &__main-menu
+            display: none
+        &__hamburger-menu
+            display: block
+@media (max-width: 475px)
+    .nav
+        &-active
+            .phone
+                display: none
